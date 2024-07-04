@@ -86,8 +86,7 @@ class PaycometController extends Controller
                 $transreference,
                 $currency
             );
-//            error pendiente de corregir
-//            dd($paymentInfo);
+
             if ($paymentInfo['DS_ERROR_ID'] !== 0) {
                 return response()->json(['error' => $paymentInfo['DS_ERROR_ID']], 400);
             }

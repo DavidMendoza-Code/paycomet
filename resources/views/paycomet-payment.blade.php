@@ -21,7 +21,7 @@
             <h1>PAYMENT</h1>
             <article class="card">
                 <div class="card-body p-5">
-                    <form role="form" id="paycometPaymentForm" name="paycometPaymentForm"  action="{{ route('payment.callback.soap') }}" method="POST">
+                    <form role="form" id="paycometPaymentForm" name="paycometPaymentForm"  action="{{ route('payment.callback') }}" method="POST">
                         @csrf
                         <input type="hidden" name="amount" value="1234">
                         <input type="hidden" data-paycomet="jetID" value="XazDwUtdXpmPC7eAK9P7rdFWTPVVtSuq">
