@@ -30,12 +30,3 @@ Route::post('/payment/callback-soap', [PaycometController::class, 'handleCallbac
 // Ruta para mostrar el resultado de la autenticación de Paycomet
 Route::get('/payment/result', [PaycometController::class, 'authenticationResult'])->name('payment.result');
 
-
-//
-//
-//Route::get('/prueba', [paycometController::class, 'index'])->name('index');
-//Route::post('/prueba/callback', [paycometController::class, 'callback'])->name('callback.prueba');
-//Route::post('/prueba/callbackSoap', [paycometController::class, 'callbackSoap'])->name('callbackSoap.prueba');
-//
-//Route::get('operation/paycomet/result', [paycometController::class, 'paycometAuthenticationResult'])->name('paycomet.result');
-//
